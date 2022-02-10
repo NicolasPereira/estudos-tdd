@@ -1,0 +1,7 @@
+version: '3'
+services: 
+  php:
+    restart: always
+    build: .
+    volumes: 
+      - ./:/var/www/
