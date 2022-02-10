@@ -1,0 +1,19 @@
+{
+    "name": "root/www",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Root\\Www\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nicolas Pereira",
+            "email": "pereira.nicolasrocha@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
