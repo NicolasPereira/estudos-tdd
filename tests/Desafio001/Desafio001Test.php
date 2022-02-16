@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Desafio001;
+namespace Desafio001;
 
 use PHPUnit\Framework\TestCase;
 use Root\Www\Desafio001\Desafio001;
