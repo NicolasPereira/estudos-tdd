@@ -3,7 +3,7 @@
 namespace Desafio001;
 
 use PHPUnit\Framework\TestCase;
-use Root\Www\Desafio001\Desafio001;
+use App\Desafio001\Desafio001;
 
 class Desafio001Test extends TestCase
 {

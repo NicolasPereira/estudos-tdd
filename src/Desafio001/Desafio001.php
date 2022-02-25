@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace Root\Www\Desafio001;
+namespace App\Desafio001;
 
 class Desafio001
 {
