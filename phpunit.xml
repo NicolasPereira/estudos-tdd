@@ -16,6 +16,12 @@
         <testsuite name="default">
             <directory>tests</directory>
         </testsuite>
+        <testsuite name="desafio001">
+            <directory>tests/Desafio001</directory>
+        </testsuite>
+        <testsuite name="desafio002">
+            <directory>tests/Desafio002</directory>
+        </testsuite>
     </testsuites>
 
     <coverage cacheDirectory=".phpunit.cache/code-coverage"
