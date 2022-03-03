@@ -17,16 +17,8 @@ class StudentTest extends TestCase
     public function testShouldReturnNameAttribute()
     {
         $student = $this->createStudent();
-        $this->assertEquals('nicolas', $student->name());
+        $this->assertEquals('nicolas', $student->name);
     }
-
-    public function testShouldChangeNameValueWhenUpdateName()
-    {
-        $student = $this->createStudent();
-        $student->updateName('Daniel');
-        $this->assertEquals('Daniel', $student->name());
-    }
-
 
     public function createStudent(): Student
     {
