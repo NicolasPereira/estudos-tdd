@@ -11,8 +11,8 @@ class Host extends User
         parent::__construct($name, true);
     }
 
-    public function makeCoHostUser(User $user)
+    public function makeCoHostUser(User $user): void
     {
-        $user->setCoHost(true);
+        $user->coHost = true;
     }
 }
