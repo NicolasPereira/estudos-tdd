@@ -13,13 +13,4 @@ class Student extends User
         parent::__construct($name);
     }
 
-    public function updateName(string $name): void
-    {
-        parent::updateName($name);
-    }
-
-    public function name(): string
-    {
-        return parent::name();
-    }
 }
