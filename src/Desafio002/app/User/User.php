@@ -6,9 +6,7 @@ class User
 {
     public function __construct(
         public readonly string $name,
-        public bool $coHost = false
-    )
-    {
-
-    }
+        public bool $coHost = false,
+        public bool $microphoneActive = false
+    ){}
 }
