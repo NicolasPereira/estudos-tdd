@@ -8,8 +8,13 @@ use App\Desafio002\app\User\User;
 
 class HostServices
 {
+
+    public function __construct(
+        private Host $host,
+    ){}
+
     public function makeCoHostUser(User $user): void
     {
-        $user->coHost = true;
+        $this->host->chargeUserHost($user);
     }
 }

@@ -9,14 +9,13 @@ use App\Desafio002\app\User\User;
 class Host extends User
 {
     public function __construct(
-        string $name, 
-        private HostServices $service
+        string $name,
     ){
         parent::__construct($name, true);
     }
 
-    public function makeCoHostUser(User $user): void
+    public function chargeUserHost(User $user)
     {
-        $this->service->makeCoHostUser($user);
+        $user->coHost = true;
     }
 }

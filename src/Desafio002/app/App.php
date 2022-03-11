@@ -13,9 +13,11 @@ class App {
     public function index(): User
     {
         $user = new User('nicolas');
-        $hostService = new HostServices();
-        $host = new Host('nicolas', $hostService);
-        $host->makeCoHostUser($user);
+
+        $host = new Host('nicolas');
+        $hostService = new HostServices($host);
+
+        $hostService->makeCoHostUser($user);
         return $user;
     }
 }
