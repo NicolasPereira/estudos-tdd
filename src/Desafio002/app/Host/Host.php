@@ -3,7 +3,6 @@ declare(strict_types=1);
 
 namespace App\Desafio002\app\Host;
 
-use App\Desafio002\app\Host\Services\HostServices;
 use App\Desafio002\app\User\User;
 
 class Host extends User
