@@ -22,15 +22,17 @@ class User
 
     public function muteAllUser(ClassRoom $room)
     {
-        if ($this->coHost) {
-            foreach ($room->participantList as $user)
-            {
-                $this->muteUser($user);
-            }
+        if (!$this->coHost) {
+          return;
+        }
+
+        foreach ($room->participantList as $user)
+        {
+            $this->muteUser($user);
         }
     }
 
-    public function addParticipantInClassRoom(User $user, ClassRoom $classRoom)
+    public function addParticipantInClassRoom(User $user, ClassRoom $classRoom) : string
     {
         if (!$this->coHost) {
             return 'Você não tem permissão para adicionar usuários';
