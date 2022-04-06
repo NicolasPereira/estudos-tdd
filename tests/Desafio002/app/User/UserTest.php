@@ -76,7 +76,7 @@ class UserTest extends TestCase
 
     private function createUser(): User
     {
-        return new User('User');
+        return new User(name: 'User', microphoneActive: true);
     }
 
     private function createRoom(array $participantList): ClassRoom
