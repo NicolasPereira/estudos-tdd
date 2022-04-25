@@ -13,7 +13,7 @@ class App {
 
     public function index(): User
     {
-        $user = new User('nicolas');
+        $user = new User('zeca');
         $student = new Student('nicolas');
         $host = new Host('nicolas');
         $host->chargeUserHost($student);
